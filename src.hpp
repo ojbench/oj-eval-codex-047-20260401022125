@@ -71,7 +71,7 @@ private:
     // Clamp speed magnitude to v_max (minus a tiny epsilon for safety)
     Vec clamp_speed(const Vec &v) const {
         double speed = v.norm();
-        double lim = std::max(0.0, v_max - 1e-9);
+        double lim = std::max(0.0, v_max);
         if (speed <= lim) return v;
         return v * (lim / speed);
     }
@@ -135,4 +135,3 @@ public:
 // You may add helper types here if needed.
 
 #endif // PPCA_SRC_HPP
-
