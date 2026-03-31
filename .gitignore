@@ -1,0 +1,17 @@
+# Local simulation artifacts
+local_sim
+local_sim2
+sim.log
+sim2.log
+trace_info
+*.o
+*.out
+*.exe
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+*.tmp
+*.swp
+*.DS_Store
